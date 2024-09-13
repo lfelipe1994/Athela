@@ -6,6 +6,7 @@ import { adicionaCliente, buscaClientesDoUsuario } from '../../services/cliente'
 import uuid from 'react-native-uuid';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { atualizaNotificacao } from '../../services/usuario';
+import BotaoSair from '../../components/botaoSair';
 
 export default function CadastraClientes() {
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -135,6 +136,7 @@ export default function CadastraClientes() {
             >
               <Text style={styles.buttonText}>Configure os avisos</Text>
             </TouchableOpacity>
+            <BotaoSair/>
           </>
         )}
         {isFormVisible && (

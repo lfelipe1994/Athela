@@ -97,13 +97,14 @@ export default function ConsultaClientes() {
         <Text style={styles.title}>Consulta de Cliente</Text>
       </View>
       <View style={styles.conteudo}>
-        <View style={styles.checkboxContainer}>
+        {clientes.length > 0 && <View style={styles.checkboxContainer}>
           <Switch
             value={ocultarEntregues}
             onValueChange={setOcultarEntregues}
           />
           <Text style={styles.checkboxLabel}>Ocultar projetos entregues</Text>
         </View>
+        }
         {clientesOrdenados.length > 0 ? (
           <FlatList
             data={clientesOrdenados}
