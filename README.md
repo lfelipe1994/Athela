@@ -44,6 +44,6 @@ Caso não, execute o comando "Set-ExecutionPolicy RemoteSigned".
 
 3.3 - Na pasta frontEnd vai ter uma pasta "api" com um arquivo "api.ts" dentro, nele você vai preencher a "baseURL" para "http://**ipDaSuaMaquina**:8000", ficando parecido com a imagem abaixo, preste atenção para manter o **:8000** pois é a porta que o backEnd estará rodando, depois disso salve o arquivo.
 
-![Imagem do comando sendo executado](./imagensTutorial/api.png)
+![Imagem do comando sendo executado](./imagensTutorial/APIIP.png)
 
 3.4 - No terminal do Vscode rode o comando "npx expo start --tunnel" para inicializar o frontEnd, ele gerará um qrcode, caso no aplicativo expo go não tenha a opção "Scan QR code" utilize a câmera do seu celular e aponte para o código. Pronto, você já pode desfrutar do Athela.
